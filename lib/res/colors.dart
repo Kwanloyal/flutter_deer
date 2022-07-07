@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Colours {
+  //const修饰变量
   static const Color app_main = Color(0xFF4688FA);
   static const Color dark_app_main = Color(0xFF3F7AE0);
 

@@ -55,7 +55,8 @@ class LoadImage extends StatelessWidget {
 
 /// 加载本地资源图片
 class LoadAssetImage extends StatelessWidget {
-  
+
+  //构造函数的使用
   const LoadAssetImage(this.image, {
     super.key,
     this.width,
@@ -80,6 +81,7 @@ class LoadAssetImage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Image.asset(
+      //用工具类加载项目本地图片
       ImageUtils.getImgPath(image, format: format),
       height: height,
       width: width,

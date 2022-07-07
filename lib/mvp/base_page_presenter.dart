@@ -11,6 +11,7 @@ class BasePagePresenter<V extends IMvpView> extends BasePresenter<V> {
     _cancelToken = CancelToken();
   }
 
+  //网络库
   late CancelToken _cancelToken;
 
   @override
@@ -22,6 +23,7 @@ class BasePagePresenter<V extends IMvpView> extends BasePresenter<V> {
   }
 
   /// 返回Future 适用于刷新，加载更多
+  // 返回Future或者Stream对象的函数。 这些函数被称为异步函数
   Future<dynamic> requestNetwork<T>(Method method, {
     required String url,
     bool isShow = true,

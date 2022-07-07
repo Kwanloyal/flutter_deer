@@ -77,6 +77,7 @@ class DioUtils {
 
   static late Dio _dio;
 
+  //可通过访问属性的方式, 访问此函数
   Dio get dio => _dio;
 
   // 数据返回格式统一，统一处理异常
